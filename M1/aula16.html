@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML</title>
+</head>
+<body>
+    <h1>usando diferentes tamanhos de imagem coma tag picture</h1>
+    <p>
+        ao acessar em um dispositivo com a tela menor o navegador <br>
+        ira reajustar o tamanho da imagem automaticamente. 
+    </p>
+
+    <picture>
+        <!-- 
+        
+        Os sources devem estar acima de maneira hierarquica,em ordem crescente ,no exemplo abaixo, é possível
+        perceber isso na linha 32 temos a imagem P e sucessivamente na 24 temos a imagem M e logo abaixo na
+        linha 25 temos a imagem padrão, tamanho G.
+         
+        RESUMINDO:
+
+        1-A FOTO (P) DEVE ESTAR ACIMA DE M E G;
+        2-A FOTO (M) DEVE ESTAR ACIMA DE G
+        3-A FOTO (G) DEVE ESTAR ABAIXO DE AMBAS ABAIXO E DEVE ESTAR DEFINIDA COMO FOTO PADRÃO.
+
+        OBS: É mescessário ter dierentes resoluções que sirvam tanto para altura e largura da tela, já que nos
+        dispositivos móveis , como o celular, é possível deitar a tela e isso aumenta a largura e diminui a altura.
+
+        -->
+        <source media="(max-width: 750px)" srcset="imagens/imagem_p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/imagema_m.png" type="image/png">
+        <img src="imagens/imagem_g.png" alt="imagem grande">
+    </picture>
+</body>
+</html>

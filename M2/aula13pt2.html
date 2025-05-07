@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Texto escondido</title>
+
+    <style>
+        h1{
+            text-align: center;
+            color: red;
+
+        }
+        h1:hover{
+            color: rgb(51, 80, 51);
+            background-color: rgb(191, 165, 130);
+
+        }
+
+        div:hover {
+            background-color: rgb(221, 12, 12);
+        }
+
+        div > p{
+            display: none;
+        }
+
+        div:hover > p{
+            display: block;
+            color: rgb(128, 28, 0);
+            background-color: rgb(114, 114, 79);
+        }
+
+        p{
+            text-align: center;
+        }
+
+
+    </style>
+
+</head>
+<body>
+    <h1>Clique na caixa abaixo</h1>
+    
+    <div>
+        TEXTO EXPOSTO
+        <p>TEXTO ESCONDIDO</p>
+    </div>
+    
+    
+    
+</body>
+</html>

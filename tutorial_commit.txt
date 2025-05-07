@@ -1,0 +1,29 @@
+git init - inicia uma nova pasta /.git(nosso repositorio local) no diretorio atual
+git add . - adiciona todos os arquivos e pastas do diretorio atual ao repositorio local
+git commit -m "nome da versão"
+git branch -M "nome do branch" esse comando é recomendado atualmente.
+git status - verifica se o repositorio já está com os arquivos e pastas
+
+VINCULAR UM USUÁRIO AO(s)  REPOSITORIO(s) LOCAL(ais):
+
+considerando que seja a primeira vez que estamos criando um repositorio, é nescessário antes criar um usuário para o git com os seguintes comandos:
+
+git config --global user.name "nome desejado"
+git config --global user.email "email desejado"
+
+COMO VINCULAR REPOSITORIO GITHUB(REMOTO) AO LOCAL:
+
+git remote add origin https://github.com/usuário(do github)/repositorio.git(nome do repositorio)
+git remote -v - para verificar se foi vinculado
+
+ENVIANDO ARQUIVOS LOCAIS PARA  O REPOSITORIO GITHUB:
+
+git push -u origin main - envia os arquivos.
+git push origin main - envia alterações.
+
+OBS: quando o repositorio remoto possui arquivos que não existem no repositorio local isso pode gerar um erro, então para resolver isso se utiliza o código:
+
+git pull origin main --rebase
+
+CHAVE DO REPOSITORIO: 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
+

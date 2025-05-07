@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sombra nas caixas</title>
+    <style>
+        body{
+            background-color: darkkhaki;
+        }
+
+        h1 , h2{
+            background-color: ghostwhite;
+            border-radius: 10px;
+
+            /*
+
+            ACIMA UM EXEMPLO DE COMO É POSSÍVEL ALTERAR O FORMATO DAS BORDAS DE UMA DIV.
+            
+            */
+        }
+
+        #footerprhase{
+            text-align: center;
+            background-color: black;
+            color: ghostwhite;
+        }
+
+        header{
+            box-shadow: 1px 1px 1px grey;
+            
+        }
+
+        /*
+        
+        O SHORTHAND DO BOX-SHADOW SEGUE O SEGUINTE PADRÃO:
+
+        a primeira medida a ser informado se refere ao deslocamento horizontal,
+        podendo ser para direita quando positivo e para esquerda quando negativo.
+
+        a segunda medida determina o deslocamento vertical, quando o valor é positivo a sombra vai pra baixo
+        e quando negativo para cima
+
+        a terceira medida é o espalhamento da sombra.
+
+        DIFERENÇA ENTRE OS PARÂMETROS (OUSET, INSET)
+
+        OUTSET - A sombra espalha pra fora;
+
+        INSET - A sombra espalha pra dentro
+        
+        */
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Meu site</h1>
+        <nav>
+            <a href="*">LINK</a>
+            <a href="*">LINK</a>
+            <a href="*">LINK</a>
+            <a href="*">LINK</a>
+        </nav>
+    </header>
+    <main>
+
+        <H2>Aplicando sombra</H2>
+
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Non ea alias quibusdam ipsam nam dicta animi, reiciendis, corporis vitae voluptatem quae voluptas eaque explicabo debitis? Eveniet tempore ad ullam hic.lore Lorem ipsum dolor sit amet consectetur, adipisicing elit. Optio beatae, expedita praesentium provident iste quae quis dolores impedit, voluptatum at tempora tenetur facere soluta perspiciatis voluptatibus quidem dolorem asperiores facilis?</p>
+
+    </main>
+    <footer>
+
+        <p id="footerprhase">Desemvolvido por Moisés</p>
+
+    </footer>
+</body>
+</html>

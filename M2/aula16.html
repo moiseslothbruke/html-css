@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelo de caixas na prática</title>
+    <style>
+        #boxlevel{
+             background-color: salmon;
+             padding: 10px;
+             border: 10px;
+             margin: 10px;
+             outline: 10px;   
+        }
+       #inlinelevel{
+             border: solid red;
+             border-width: 15px;
+       }
+    </style>
+</head>
+<body>
+    <h1>O h1 é um exemplo de BOX-LEVEL</h1>
+    <p id="boxlevel">
+        E os parágrafos também são um bom exemplo de caixas BOX-LEVEL já <a href="#">OS LINKS</a> são um exemplo de caixas INLINE-LEVEL. 
+    </p>
+
+    <p>
+        Exemplo de INLINE-LEVEL <a href="#" id="inlinelevel">ESTE LINK É UM ELEMENTO INLINE LEVEL.</a>
+    </p>
+
+    <p>
+        Ao verificar as configurações das caixas no DevTools é possível notar que existem configurações CSS padrões do <mark>user agent(O</mark> navegador) para cada caixa. <br>
+
+        Verificando o parâmetro display pode-se observar que toda caixa BOX-LEVEL tem como argumento display: <mark>block</mark> já as caixa INLINE-LEVEL tem o argumento <mark>inline-block</mark> 
+    </p>
+
+</body>
+</html>
