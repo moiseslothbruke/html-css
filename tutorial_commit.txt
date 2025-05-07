@@ -25,7 +25,7 @@ OBS: quando o repositorio remoto possui arquivos que não existem no repositorio
 
 git pull origin main --rebase
 
-CHAVE DO REPOSITORIO: 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
+CHAVE DO REPOSITORIO do curso html: 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
 
 COMO VERIFICAR ALTERAÇÕES DE UM COMMIT FEITO LOCALMENTE:
 
