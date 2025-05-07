@@ -1,0 +1,28 @@
+@charset "UTF-8";
+body{
+    background-color: rgb(73, 114, 101);
+}
+
+h1{
+    color: blanchedalmond;
+}
+
+h2{
+    color: darkgray;
+}
+
+#principal{
+    text-align: center;
+    background-color: ghostwhite;
+    color: goldenrod;
+
+}
+
+/*
+
+EXISTE OS ID(s) E TAMBÉM O QUE CHAMAMOS DE CLASSES...
+
+ID É REPRESENTADO EM CSS POR #
+CLASS É REPRESENTADO POR .
+
+*/
