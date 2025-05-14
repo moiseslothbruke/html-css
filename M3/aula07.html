@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Propriedade background position</title>
+    <style>
+        div.bloco{
+            background-image: url(wallpaper002.jpg);
+            height: 200px;
+            border: 2px solid black;
+            border-radius: 10px;
+            margin: 25px;
+        }
+        
+        div#q1{
+            background-position: left right;
+        }
+        div#q2{
+            background-position: left center;
+        }
+        div#q3{
+            background-position: center center;
+        }
+        div#q4{
+            background-position: right right;
+        }
+
+    </style>
+    <!--
+    Utilizando a medida vh que pega a altura da viewport em porcentagem(heigth:100vh;), é possível fazer um fundo para o site
+    e com background-position, posicionar da maneira desejada esse fundo.
+    -->
+</head>
+<body>
+    <div class="bloco" id="q1">
+
+    </div>
+    <div class="bloco" id="q2">
+
+    </div>
+    <div class="bloco" id="q3">
+
+    </div>
+    <div class="bloco" id="q4">
+
+    </div>
+</body>
+</html>
