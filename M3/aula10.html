@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Centralização vertical de caixas</title>
+    <style>
+
+        /*
+
+        Por padrão cada caixa em HTML tem posição relativa.
+
+        */
+        #container{
+            background-image: url(target001.png);
+            height: 97vh;
+            background-size: 100% 100%;
+            background-attachment: cover;
+            position: relative;
+            height: 500px;
+            background-color: brown;
+        }
+
+        #conteudo{
+            background-image: url(target001.png);
+            background-size: 100% 100%;
+            position: absolute;
+            height: 200px;
+            width: 400px;
+            background-color: rgb(223, 173, 37);
+            /*
+            Para centralizar uma caixa verticalmente é nescessário que se determine a poisição atráves do alinhamneto da esquerda para a direita(left) e do topo para baixo(top). Com isso, entende-se que o alinhamento será feito considerando o lado esquerdo superior da caixa
+            */
+            left: 50%;
+            top: 50%;
+
+            /*
+            O trasform: translate irá reposicionar o elemento para a posição desejada, considerando a viewport, da seguinte forma: 
+
+            1 - Valores positivos: 50%(alinhamento horizontal para a direita) 50%(alinhamento vertical para baixo)
+
+            2 - Valores negativos: -50%(alinhamento horizontal para a esquerda) -50%(alinhamento vertical para cima)
+
+            */
+
+           transform: translate(-50%,-50%);
+        }
+    </style>
+</head>
+<body>
+    <h1>centralizando</h1>
+    
+
+    <section id="container">
+        <article id="conteudo">
+            
+        </article>
+    </section>
+</body>
+</html>
