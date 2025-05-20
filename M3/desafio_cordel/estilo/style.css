@@ -1,0 +1,84 @@
+@charset "UTF-8";
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+html , body{
+    min-height: 100vh;
+    background-color: darkgray;
+}
+
+/*HEADER*/
+
+header{
+    background-color: #000;
+    margin: auto;
+    padding: 50px;
+}
+
+header p {
+    color: #fff;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    padding: 10px;
+
+}
+
+header h1{
+    color: #fff;
+    font-family: 'Courier New', Courier, monospace;
+    font-variant: small-caps;
+    text-align: center;
+    padding-top: 15px;
+
+}
+
+a{
+    color: #fff;
+}
+
+a:hover{
+    color: chartreuse;
+}
+
+p{
+    padding: 15px;
+}
+
+/*CONTEÚDO PRINCIPAL*/
+
+section.normal{
+    background-color: #fff;
+    color: #000;
+}
+
+section.imagem{
+    background-color: #3d3d3d;
+    color: #fff;
+}
+
+section.imagem > p{
+    width: 400px;
+    background-color: #00000052;
+}
+
+
+section{
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    line-height: 2em;
+    padding-left: 30px;
+}
+
+/*RODAPÉ*/
+
+footer{
+    background-color: #000;
+    text-align: center;
+}
+
+footer p{
+    color: #fff;
+}
