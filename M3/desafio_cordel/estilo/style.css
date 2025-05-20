@@ -1,8 +1,21 @@
 @charset "UTF-8";
 
+/*FONTES*/
+
+@import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
+
+
+
 *{
     margin: 0px;
     padding: 0px;
+}
+
+:root{
+    --fonte1: 'Passion One', cursive;
+    --fonte2:  'Sriracha', cursive;
 }
 
 html , body{
@@ -16,6 +29,7 @@ header{
     background-color: #000;
     margin: auto;
     padding: 50px;
+    font-size: 1vw;
 }
 
 header p {
@@ -32,6 +46,8 @@ header h1{
     font-variant: small-caps;
     text-align: center;
     padding-top: 15px;
+    font-family: var(--fonte2);
+    font-size: 5vw;
 
 }
 
@@ -41,10 +57,6 @@ a{
 
 a:hover{
     color: chartreuse;
-}
-
-p{
-    padding: 15px;
 }
 
 /*CONTEÚDO PRINCIPAL*/
@@ -60,17 +72,21 @@ section.imagem{
 }
 
 section.imagem > p{
-    width: 400px;
+    display: inline-block;
+    padding: 5px;
     background-color: #00000052;
 }
 
 
 section{
-    padding-top: 10vh;
-    padding-bottom: 10vh;
+    padding-top: 0px;
+    padding-bottom: 5vh;
     line-height: 2em;
     padding-left: 30px;
+    font-family: var(--fonte1);
+    font-size: 3.5vw;
 }
+
 
 /*RODAPÉ*/
 
