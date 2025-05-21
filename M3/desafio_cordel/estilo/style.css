@@ -68,7 +68,10 @@ section.normal{
 
 section.imagem{
     background-color: #3d3d3d;
+    box-shadow: inset 6px 6px 13px 0px #00000077;
     color: #fff;
+    background-attachment: fixed; /*Aliada a outras configurações, produz o efeito paralax*/
+
 }
 
 section.imagem > p{
@@ -87,6 +90,21 @@ section{
     font-size: 3.5vw;
 }
 
+section#img1{
+    background-image: url(../imagens/background001.jpg);
+    background-position: right center;
+    background-size: cover;
+
+}
+
+section#img2{
+    background-image: url(../imagens/background002.jpg);
+    background-size: cover;
+}
+
+p{
+    padding-bottom: 1em;
+}
 
 /*RODAPÉ*/
 
