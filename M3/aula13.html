@@ -19,29 +19,48 @@
         thead, tfoot{
             background-color: gray;
         }
+        tbody > tr:nth-child(odd){ /*EFEITO ZEBRADO*/
+            background-color: rgba(255, 127, 80, 0.442);
+        }
     </style>
 </head>
 <body>
     <h1>Usando tabelas grandes</h1>
     <!--
+    
     ANATOMIA PARA TABELAS GRANDES:
 
     TABLE
+        CAPTION - Título da tabela
         THEAD
             TR, TD, TH
         TBODY
             TR, TD, TH
         TFOOT
             TR, TD, TH
+
+    SCOPE E SEUS VALORES:
+
+    O que é scope? - Este atributo indica se o cabeçalho se aplica a uma linha, coluna, grupo de linhas ou grupo de colunas na tabela. 
+
+    VALORES:
+
+        row: A célula de cabeçalho refere-se à linha em que está localizada.
+        col: A célula de cabeçalho refere-se à coluna em que está localizada.
+        rowgroup: A célula de cabeçalho refere-se a um grupo de linhas.
+        colgroup: A célula de cabeçalho refere-se a um grupo de colunas.
+        group: A célula de cabeçalho refere-se a um grupo de linhas e/ou colunas.
+
     -->
 
     <table>
+        <caption>População das Unidades Federativas</caption>
         <thead>
             <tr>
-                <th>
+                <th scope="col">
                     Estado
                 </th>
-                <th>
+                <th scope="col">
                     População
                 </th>
             </tr>
@@ -66,7 +85,7 @@
         </tbody>
         <tfoot>
             <tr>
-                <th>Total</th>
+                <th scope="row">Total</th>
                 <td>84 352 783</td>
             </tr>
 
