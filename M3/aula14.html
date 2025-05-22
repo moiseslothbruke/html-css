@@ -3,9 +3,48 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Caption e escopo de títulos</title>
+    <title>Mesclagem de células</title>
+    <style>
+    
+    body{
+        font-family: 'Courier New', Courier, monospace;
+    }
+
+    table{
+        width: 500px;
+        border-collapse: collapse;
+        text-align: center;
+    }
+
+    tr, td{
+        border: 1px solid rgba(0, 0, 0, 0.448);
+        padding: 10px;
+    }
+
+    </style>
 </head>
 <body>
-    
+    <h1>Mesclando</h1>
+    <table>
+        <tr>
+            <td>A</td>
+            <td colspan="2">B</td> <!--Faz a célula B ocupar 2 colunas-->
+        </tr>
+        <tr>
+            <td>D</td>
+            <td>E</td>
+            <td>F</td>
+        </tr>
+        <tr>
+            <td>G</td>
+            <td>H</td>
+            <td>I</td>
+        </tr>
+        <tr>
+            <td>J</td>
+            <td>L</td>
+            <td>M</td>
+        </tr>
+    </table>
 </body>
 </html>
