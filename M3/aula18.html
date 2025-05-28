@@ -4,53 +4,35 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Desafio parte 3</title>
-    <style>
-        *{
-            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-        }
-
-        table{
-            width: 600px;
-            border-collapse: collapse;
-        }
-
-        tr , th{
-            border: 1px solid black;
-
-        }
-    </style>
 </head>
 <body>
     <h1>Tabela complexa</h1>
 
     <table>
-        <thead>
-            <tr>
-                <th>Área</th>
-                <th>Disciplinas</th>
-                <th colspan="2">Notas</th>
-                <th>Média</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <th rowspan="5">Exatas</th>
-            </tr>
-            <tr>
-                <td>Matemática</td>
-                <th>Nota 1</th>
-                <th>Nota 2</th>
-            </tr>
-            <tr>
-                <td>Física</td>
-            </tr>
-            <tr>
-                <td>Química</td>
-            </tr>
-            <tr>
-                <td>Biologia</td>
-            </tr>
-        </tbody>
+        <tr>
+            <th>Área</th>
+            <th>Disciplina</th>
+            <th>Notas</th>
+            <th>Média</th>
+        </tr>
+        <tr>
+            <th>Exatas</th>
+            <td>Matemática</td>
+            <td>Física</td>
+            <td>Química</td>
+            <td>Biologia</td>
+        </tr>
+        <tr>
+            <th>Média de Exatas</th>
+        </tr>
+        <tr>
+            <th>Humanas</th>
+            <td>História</td>
+            <td>Geografia</td>
+        </tr>
+        <tr>
+            <th>Média de Humanas</th>
+        </tr>
     </table>
 </body>
 </html>
