@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+
+        *{
+            font-family: 'Courier New', Courier, monospace;
+            padding: 5px;
+        }
+        
+        table{
+            width: 500px;
+            border-collapse: collapse;
+        }
+
+        th, td{
+            border: 1px solid black;
+        }
+
+        /*Como isolar e destacar colunas com o agrupamento de coluna?*/
+
+        .verde{
+            background-color: chartreuse;
+        }
+
+    </style>
+</head>
+<body>
+    
+    <h1>Exercício de tabelas</h1>
+    <colgroup> <!--Agrupamento de colunas-->
+    <col> <!--Cada tag col representa uma coluna-->
+    <col class="verde" span="3"> <!--Não funcionou-->
+    <col>
+    <col>
+    </colgroup>
+    <table>
+        <caption>Cadastro</caption>
+        <tr>
+            <th scope="col">Nome</th>
+            <th scope="col">Sexo</th>
+            <th scope="col">Idade</th>
+            <th scope="col">Profissão</th>
+        </tr>
+        <tr>
+            <td>Ana Maria</td>
+            <td>Feminino</td>
+            <td>25</td>
+            <td>Enfermeira</td>
+        </tr>
+        <tr>
+            <td>Antonio</td>
+            <td>Masculino</td>
+            <td>20</td>
+            <td>Advogado</td>
+        </tr>
+        <tr>
+            <td>Marcos</td>
+            <td>Masculino</td>
+            <td>44</td>
+            <td>Juiz</td>
+        </tr>
+        <tr>
+            <td>Antonela</td>
+            <td>Feminino</td>
+            <td>56</td>
+            <td>Médica</td>
+        </tr>
+    </table>
+
+
+</body>
+</html>
